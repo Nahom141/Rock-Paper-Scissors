@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="stys.css" />
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <div class="title">
+        <h1>ROCK<br>PAPER<br>  SCISSORS</h1>
+      </div>
+      <div class="score-box">
+        <p>SCORE</p>
+        <span id="score">0</span>
+      </div>
+    </header>
+
+    <div class="choices" id="choices">
+      <button class="choice paper" data-choice="paper">
+        <img src="./images/icon-paper.svg" alt="paper">
+      </button>
+      <button class="choice scissors" data-choice="scissors">
+        <img src="./images/icon-scissors.svg" alt="scissors">
+      </button>
+      <button class="choice rock" data-choice="rock">
+        <img src="./images/icon-rock.svg" alt="rock">
+      </button>
+    </div>
+
+    <div class="result">
+      <div class="picked">
+      
+      </div>
+      <div class="outcome hidden">
+        <h2 id="outcome-text"></h2>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+    <div class="triangle hidden">
+        <img src="images/bg-triangle.svg" alt="" srcset="">
+    </div>
+
+    <button class="rules-btn">RULES</button>
+    <div class="rule-modal hidden" >
+        <div class="rule-container">
+          <div class="rule-header">
+            <h2>RULES</h2>
+            <button class="close-btn">
+              <img src="images/icon-close.svg" alt="" srcset="">
+            </button>
+          </div>
+          <div class="rule-body">
+            <img src="./images/image-rules.svg" alt="">
+          </div>
+        </div>
+      
+      </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
